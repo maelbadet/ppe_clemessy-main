@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/retours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="précédent"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"></Button>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/images"></ImageView>
+
+    <EditText
+        android:id="@+id/connexion_nom"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="prénom"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/connexion_mdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mot De Passe"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/affichemdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="afficher le mot de passe"
+        android:onClick="onCheckboxCliked"/>
+
+    <Button
+        android:id="@+id/inscription_bouton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="inscription" />
+
+</LinearLayout>
